@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Anonymous Submission Video Demonstrations</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+    }
+
+    .page {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 32px 16px 40px;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 0.95rem;
+      color: #9ca3af;
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin: 24px 0 8px;
+    }
+
+    .section-desc {
+      font-size: 0.9rem;
+      color: #9ca3af;
+      margin-bottom: 8px;
+    }
+
+    .video-row {
+      display: flex;
+      flex-wrap: nowrap;          /* keep in one row */
+      overflow-x: auto;           /* horizontal scroll if too many */
+      gap: 12px;
+      padding-bottom: 8px;
+      margin-bottom: 4px;
+    }
+
+    .video-row::-webkit-scrollbar {
+      height: 6px;
+    }
+    .video-row::-webkit-scrollbar-thumb {
+      background: #4b5563;
+      border-radius: 999px;
+    }
+
+    .video-card {
+      background: #111827;
+      border-radius: 10px;
+      padding: 8px;
+      min-width: 220px;
+      max-width: 260px;
+      box-sizing: border-box;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+
+    .video-card video {
+      width: 100%;
+      border-radius: 6px;
+      display: block;
+    }
+
+    .video-title {
+      font-size: 0.9rem;
+      margin-top: 6px;
+    }
+
+    .video-filename {
+      font-size: 0.75rem;
+      color: #6b7280;
+      margin-top: 2px;
+      word-break: break-all;
+    }
+
+    .footer-note {
+      margin-top: 28px;
+      font-size: 0.8rem;
+      color: #6b7280;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <h1>Video Demonstrations (Anonymous)</h1>
+    <div class="subtitle">
+      All videos are provided for evaluation purposes only and contain no author-identifying information.
+    </div>
+
+
+    <h2>VLA Baseline Comparison</h2>
+    <p class="section-desc">
+      The following table summarizes the performance of OpenVLA, π₀, and our method on Meta-World,
+      LIBERO-long and Ravens tasks.
+    </p>
+
+    <table style="width:100%; border-collapse: collapse; margin-top: 16px; font-size: 14px;">
+      <thead>
+        <tr style="background:#1f2937; color:#e5e7eb; text-align:center;">
+          <th style="padding:8px; border:1px solid #374151;">Method</th>
+          <th style="padding:8px; border:1px solid #374151;">MW – Pick-place</th>
+          <th style="padding:8px; border:1px solid #374151;">MW – Door-open</th>
+          <th style="padding:8px; border:1px solid #374151;">MW – Window-close</th>
+          <th style="padding:8px; border:1px solid #374151;">MW – coffee pull</th>
+          <th style="padding:8px; border:1px solid #374151;">MW – Hammer</th>
+          <th style="padding:8px; border:1px solid #374151;">LIBERO – long</th>
+          <th style="padding:8px; border:1px solid #374151;">Build a jenga tower</th>
+          <th style="padding:8px; border:1px solid #374151;">Construct a 4×4×3 pyramid</th>
+          <th style="padding:8px; border:1px solid #374151;">Build a House</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr style="background:#111827; text-align:center; color:#e5e7eb;">
+          <td style="padding:8px; border:1px solid #374151; font-weight:bold;">OpenVLA</td>
+          <td style="padding:8px; border:1px solid #374151;">0.95</td>
+          <td style="padding:8px; border:1px solid #374151;">0.9</td>
+          <td style="padding:8px; border:1px solid #374151;">1.0</td>
+          <td style="padding:8px; border:1px solid #374151;">0.95</td>
+          <td style="padding:8px; border:1px solid #374151;">0.85</td>
+          <td style="padding:8px; border:1px solid #374151;">0.65</td>
+          <td style="padding:8px; border:1px solid #374151;">0.0</td>
+          <td style="padding:8px; border:1px solid #374151;">0.0</td>
+          <td style="padding:8px; border:1px solid #374151;">0.0</td>
+        </tr>
+
+        <tr style="background:#1a2234; text-align:center; color:#e5e7eb;">
+          <td style="padding:8px; border:1px solid #374151; font-weight:bold;">π₀</td>
+          <td style="padding:8px; border:1px solid #374151;">0.9</td>
+          <td style="padding:8px; border:1px solid #374151;">1.0</td>
+          <td style="padding:8px; border:1px solid #374151;">1.0</td>
+          <td style="padding:8px; border:1px solid #374151;">0.9</td>
+          <td style="padding:8px; border:1px solid #374151;">0.9</td>
+          <td style="padding:8px; border:1px solid #374151;">0.6</td>
+          <td style="padding:8px; border:1px solid #374151;">0.0</td>
+          <td style="padding:8px; border:1px solid #374151;">0.0</td>
+          <td style="padding:8px; border:1px solid #374151;">0.0</td>
+        </tr>
+
+        <tr style="background:#111827; text-align:center; color:#e5e7eb;">
+          <td style="padding:8px; border:1px solid #374151; font-weight:bold;">LYRA (Ours)</td>
+          <td style="padding:8px; border:1px solid #374151;">1.0</td>
+          <td style="padding:8px; border:1px solid #374151;">1.0</td>
+          <td style="padding:8px; border:1px solid #374151;">1.0</td>
+          <td style="padding:8px; border:1px solid #374151;">1.0</td>
+          <td style="padding:8px; border:1px solid #374151;">1.0</td>
+          <td style="padding:8px; border:1px solid #374151;">0.95</td>
+          <td style="padding:8px; border:1px solid #374151;">0.95</td>
+          <td style="padding:8px; border:1px solid #374151;">0.85</td>
+          <td style="padding:8px; border:1px solid #374151;">0.8</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+
+    <!-- Meta-World long-horizon tasks -->
+    <section>
+      <h2>Meta-World Long-Horizon Tasks (MW)</h2>
+      <div class="section-desc">
+        These videos demonstrate performance of our framework on the short-horizon Meta-World benchmark, including pick-place, door open, window close, coffee pull, and hammer tasks.
+      </div>
+
+            <!-- Task–Video Mapping Table -->
+      <table style="width:60%; border-collapse: collapse; margin-top: 12px; font-size: 14px;">
+        <thead>
+          <tr style="background:#1f2937; color:#e5e7eb; text-align:center;">
+            <th style="padding:8px; border:1px solid #374151;">Task</th>
+            <th style="padding:8px; border:1px solid #374151;">Video File</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr style="background:#111827; color:#e5e7eb; text-align:center;">
+            <td style="padding:8px; border:1px solid #374151;">MW – Pick-place</td>
+            <td style="padding:8px; border:1px solid #374151;"><code>mw-pick-place.mp4</code></td>
+          </tr>
+
+          <tr style="background:#1a2234; color:#e5e7eb; text-align:center;">
+            <td style="padding:8px; border:1px solid #374151;">MW – Door-open</td>
+            <td style="padding:8px; border:1px solid #374151;"><code>mw-door-open.mp4</code></td>
+          </tr>
+
+          <tr style="background:#111827; color:#e5e7eb; text-align:center;">
+            <td style="padding:8px; border:1px solid #374151;">MW – Window-close</td>
+            <td style="padding:8px; border:1px solid #374151;"><code>mw-window-close.mp4</code></td>
+          </tr>
+
+          <tr style="background:#1a2234; color:#e5e7eb; text-align:center;">
+            <td style="padding:8px; border:1px solid #374151;">MW – Coffee-pull</td>
+            <td style="padding:8px; border:1px solid #374151;"><code>mw-coffee-pull.mp4</code></td>
+          </tr>
+
+          <tr style="background:#111827; color:#e5e7eb; text-align:center;">
+            <td style="padding:8px; border:1px solid #374151;">MW – Hammer</td>
+            <td style="padding:8px; border:1px solid #374151;"><code>mw-hammer.mp4</code></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <div class="video-row">
+        <div class="video-card">
+          <video controls preload="metadata">
+            <source src="mw-pick-place.mp4" type="video/mp4" />
+          </video>
+          <div class="video-title">MW – Pick-place</div>
+          <div class="video-filename">mw-pick-place.mp4</div>
+        </div>
+
+        <div class="video-card">
+          <video controls preload="metadata">
+            <source src="mw-door-open.mp4" type="video/mp4" />
+          </video>
+          <div class="video-title">MW – Door-open</div>
+          <div class="video-filename">mw-door-open.mp4</div>
+        </div>
+
+        <div class="video-card">
+          <video controls preload="metadata">
+            <source src="mw-window-close.mp4" type="video/mp4" />
+          </video>
+          <div class="video-title">MW – Window-close</div>
+          <div class="video-filename">mw-window-close.mp4</div>
+        </div>
+
+        <div class="video-card">
+          <video controls preload="metadata">
+            <source src="mw-coffee-pull.mp4" type="video/mp4" />
+          </video>
+          <div class="video-title">MW – Coffee-pull</div>
+          <div class="video-filename">mw-coffee-pull.mp4</div>
+        </div>
+
+        <div class="video-card">
+          <video controls preload="metadata">
+            <source src="mw-hammer.mp4" type="video/mp4" />
+          </video>
+          <div class="video-title">MW – Hammer</div>
+          <div class="video-filename">mw-hammer.mp4</div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- LIBERO-long tasks -->
+    <section>
+      <h2>LIBERO-long Tasks</h2>
+      <div class="section-desc">
+        We provide demonstrations of our framework for all 10 LIBERO-long tasks, most long-horizon tasks within LIBERO-long require only two primitives.
+      </div>
+
+            <!-- LIBERO-long Task–Video Mapping Table -->
+      <table style="width:60%; border-collapse: collapse; margin-top: 12px; font-size: 14px;">
+        <thead>
+          <tr style="background:#1f2937; color:#e5e7eb; text-align:center;">
+            <th style="padding:8px; border:1px solid #374151;">Task ID</th>
+            <th style="padding:8px; border:1px solid #374151;">Video File</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr style="background:#111827; color:#e5e7eb; text-align:center;">
+            <td style="padding:8px; border:1px solid #374151;">LIBERO-long-task1</td>
+            <td style="padding:8px; border:1px solid #374151;"><code>libero-long-task1.mp4</code></td>
+          </tr>
+
+          <tr style="background:#1a2234; color:#e5e7eb; text-align:center;">
+            <td style="padding:8px; border:1px solid #374151;">LIBERO-long-task2</td>
+            <td style="padding:8px; border:1px solid #374151;"><code>libero-long-task2.mp4</code></td>
+          </tr>
+
+          <tr style="background:#111827; color:#e5e7eb; text-align:center;">
+            <td style="padding:8px; border:1px solid #374151;">LIBERO-long-task3</td>
+            <td style="padding:8px; border:1px solid #374151;"><code>libero-long-task3.mp4</code></td>
+          </tr>
+
+          <tr style="background:#1a2234; color:#e5e7eb; text-align:center;">
+            <td style="padding:8px; border:1px solid #374151;">LIBERO-long-task4</td>
+            <td style="padding:8px; border:1px solid #374151;"><code>libero-long-task4.mp4</code></td>
+          </tr>
+
+          <tr style="background:#111827; color:#e5e7eb; text-align:center;">
+            <td style="padding:8px; border:1px solid #374151;">LIBERO-long-task5</td>
+            <td style="padding:8px; border:1px solid #374151;"><code>libero-long-task5.mp4</code></td>
+          </tr>
+
+          <tr style="background:#1a2234; color:#e5e7eb; text-align:center;">
+            <td style="padding:8px; border:1px solid #374151;">LIBERO-long-task6</td>
+            <td style="padding:8px; border:1px solid #374151;"><code>libero-long-task6.mp4</code></td>
+          </tr>
+
+          <tr style="background:#111827; color:#e5e7eb; text-align:center;">
+            <td style="padding:8px; border:1px solid #374151;">LIBERO-long-task7</td>
+            <td style="padding:8px; border:1px solid #374151;"><code>libero-long-task7.mp4</code></td>
+          </tr>
+
+          <tr style="background:#1a2234; color:#e5e7eb; text-align:center;">
+            <td style="padding:8px; border:1px solid #374151;">LIBERO-long-task8</td>
+            <td style="padding:8px; border:1px solid #374151;"><code>libero-long-task8.mp4</code></td>
+          </tr>
+
+          <tr style="background:#111827; color:#e5e7eb; text-align:center;">
+            <td style="padding:8px; border:1px solid #374151;">LIBERO-long-task9</td>
+            <td style="padding:8px; border:1px solid #374151;"><code>libero-long-task9.mp4</code></td>
+          </tr>
+
+          <tr style="background:#1a2234; color:#e5e7eb; text-align:center;">
+            <td style="padding:8px; border:1px solid #374151;">LIBERO-long-task10</td>
+            <td style="padding:8px; border:1px solid #374151;"><code>libero-long-task10.mp4</code></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+
+      <div class="video-row">
+        <div class="video-card">
+          <video controls preload="metadata">
+            <source src="libero-task1.mp4" type="video/mp4" />
+          </video>
+          <div class="video-title">LIBERO-long Task 1</div>
+          <div class="video-filename">libero-task1.mp4</div>
+        </div>
+
+        <div class="video-card">
+          <video controls preload="metadata">
+            <source src="libero-task2.mp4" type="video/mp4" />
+          </video>
+          <div class="video-title">LIBERO-long Task 2</div>
+          <div class="video-filename">libero-task2.mp4</div>
+        </div>
+
+        <div class="video-card">
+          <video controls preload="metadata">
+            <source src="libero-task3.mp4" type="video/mp4" />
+          </video>
+          <div class="video-title">LIBERO-long Task 3</div>
+          <div class="video-filename">libero-task3.mp4</div>
+        </div>
+
+        <div class="video-card">
+          <video controls preload="metadata">
+            <source src="libero-task4.mp4" type="video/mp4" />
+          </video>
+          <div class="video-title">LIBERO-long Task 4</div>
+          <div class="video-filename">libero-task4.mp4</div>
+        </div>
+
+        <div class="video-card">
+          <video controls preload="metadata">
+            <source src="libero-task5.mp4" type="video/mp4" />
+          </video>
+          <div class="video-title">LIBERO-long Task 5</div>
+          <div class="video-filename">libero-task5.mp4</div>
+        </div>
+
+        <div class="video-card">
+          <video controls preload="metadata">
+            <source src="libero-task6.mp4" type="video/mp4" />
+          </video>
+          <div class="video-title">LIBERO-long Task 6</div>
+          <div class="video-filename">libero-task6.mp4</div>
+        </div>
+
+        <div class="video-card">
+          <video controls preload="metadata">
+            <source src="libero-task7.mp4" type="video/mp4" />
+          </video>
+          <div class="video-title">LIBERO-long Task 7</div>
+          <div class="video-filename">libero-task7.mp4</div>
+        </div>
+
+        <div class="video-card">
+          <video controls preload="metadata">
+            <source src="libero-task8.mp4" type="video/mp4" />
+          </video>
+          <div class="video-title">LIBERO-long Task 8</div>
+          <div class="video-filename">libero-task8.mp4</div>
+        </div>
+
+        <div class="video-card">
+          <video controls preload="metadata">
+            <source src="libero-task9.mp4" type="video/mp4" />
+          </video>
+          <div class="video-title">LIBERO-long Task 9</div>
+          <div class="video-filename">libero-task9.mp4</div>
+        </div>
+
+        <div class="video-card">
+          <video controls preload="metadata">
+            <source src="libero-task10.mp4" type="video/mp4" />
+          </video>
+          <div class="video-title">LIBERO-long Task 10</div>
+          <div class="video-filename">libero-task10.mp4</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ravens tasks -->
+    <section>
+      <h2>Ravens Extreme Long-Horizon Tasks</h2>
+      <div class="section-desc">
+        These tasks include extreme long step reasoning and assembly skills (require over 20 primitives), such as constructing a pyramid, building a house, or stacking a Jenga tower.
+      </div>
+
+      <!-- Ravens Task–Video Mapping Table -->
+      <table style="width:60%; border-collapse: collapse; margin-top: 12px; font-size: 14px;">
+        <thead>
+          <tr style="background:#1f2937; color:#e5e7eb; text-align:center;">
+            <th style="padding:8px; border:1px solid #374151;">Task</th>
+            <th style="padding:8px; border:1px solid #374151;">Video File</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr style="background:#111827; color:#e5e7eb; text-align:center;">
+            <td style="padding:8px; border:1px solid #374151;">Ravens – Build a Jenga tower</td>
+            <td style="padding:8px; border:1px solid #374151;"><code>Ravens_jenga_tower.mp4</code></td>
+          </tr>
+
+          <tr style="background:#1a2234; color:#e5e7eb; text-align:center;">
+            <td style="padding:8px; border:1px solid #374151;">Ravens – Build a 4×4×3 pyramid</td>
+            <td style="padding:8px; border:1px solid #374151;"><code>Ravens_pyramid-4x3.mp4</code></td>
+          </tr>
+
+          <tr style="background:#111827; color:#e5e7eb; text-align:center;">
+            <td style="padding:8px; border:1px solid #374151;">Ravens – Build a house</td>
+            <td style="padding:8px; border:1px solid #374151;"><code>Ravens_build_house.mp4</code></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+
+
+
+      <div class="video-row">
+        <div class="video-card">
+          <video controls preload="metadata">
+            <source src="Ravens_jenga_tower.mp4" type="video/mp4" />
+          </video>
+          <div class="video-title">Ravens – Build a Jenga tower</div>
+          <div class="video-filename">Ravens_jenga_tower.mp4</div>
+        </div>
+
+        <div class="video-card">
+          <video controls preload="metadata">
+            <source src="Ravens_pyramid-4x3.mp4" type="video/mp4" />
+          </video>
+          <div class="video-title">Ravens – Construct a 4×4×3 pyramid</div>
+          <div class="video-filename">Ravens_pyramid-4x3.mp4</div>
+        </div>
+
+        <div class="video-card">
+          <video controls preload="metadata">
+            <source src="Ravens_build_house.mp4" type="video/mp4" />
+          </video>
+          <div class="video-title">Ravens – Build a house</div>
+          <div class="video-filename">Ravens_build_house.mp4</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer-note">
+      This page is intended solely for anonymous peer review. Please do not redistribute the link.
+    </div>
+  </div>
+</body>
+</html>
